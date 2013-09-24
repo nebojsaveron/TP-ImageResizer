@@ -28,13 +28,13 @@ namespace ImageResizer
         private static string _rootImagePath;
         private static string RootImageRelativePath
         {
-            get { return _rootImagePath ?? (_rootImagePath = SiteConfig.Instance.UserImagesRelativePath); }
+            get { return _rootImagePath ?? (_rootImagePath = "~/_originals/"); }
         }
 
         private static string _sharedImagePath;
         private static string SharedImagePath
         {
-            get { return _sharedImagePath ?? (_sharedImagePath = SiteConfig.Instance.UserImagesSharedPath); }
+            get { return _sharedImagePath ?? (_sharedImagePath = "~/usermedia/"); }
         }
 
         #region IHttpHandler Members
@@ -66,7 +66,7 @@ namespace ImageResizer
                 //path = "<guid>/<filename>.png"
                 //args = ["<guid>","w<width>-h<height>",".png"];
                 string[] args = context.Request.AppRelativeCurrentExecutionFilePath
-                                .Replace(RootImageRelativePath, string.Empty)
+                                .Replace("~/", string.Empty)
                                 .Split('/', '.');
 
                 if (args.Length != 3)

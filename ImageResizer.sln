@@ -1,7 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageResizer", "ImageResizer.csproj", "{5BBB0046-49F5-4E6F-83A6-9755B80FDE71}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{7A0A555D-E87C-4C21-B008-6215219AC323}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWeb", "TestWeb\TestWeb.csproj", "{5BF13FB6-D8DE-4398-98C8-2A9446AC6987}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +16,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5BBB0046-49F5-4E6F-83A6-9755B80FDE71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5BBB0046-49F5-4E6F-83A6-9755B80FDE71}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5BBB0046-49F5-4E6F-83A6-9755B80FDE71}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5BBB0046-49F5-4E6F-83A6-9755B80FDE71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BF13FB6-D8DE-4398-98C8-2A9446AC6987}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BF13FB6-D8DE-4398-98C8-2A9446AC6987}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BF13FB6-D8DE-4398-98C8-2A9446AC6987}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BF13FB6-D8DE-4398-98C8-2A9446AC6987}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
